@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Base | Contact</title>
+    <meta name="description"
+        content="This is a starter HTML + CSS + JS boilerplate set of code for website projects." />
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <header class="site-header toggle-nav" data-navstate="closed">
+        <div class="container">
+            <div class="site-id">
+                <h1><a href="index.html">Base Site</a></h1>
+            </div>
+            <nav class="site-nav">
+                <div class="menu-button navicon">Menu</div>
+                <ul>
+                    <li class="hide-on-largescreens"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+
+        <div class="container">
+            <section class="hero">
+                <h1>Contact Us</h1>
+                <p>This is a sub page example with contact form.</p>
+            </section>
+        </div>
+
+        <section>
+            <div class="container">
+
+                <div class="row">
+                    <div class="two-thirds column centered">
+                        <form>
+                            <label for="contact_name">Name:</label>
+                            <input class="text" type="text" value="" name="contact_name" id="contact_name" />
+
+                            <label for="contact_email">Email Address:</label>
+                            <input class="text" type="text" value="" name="contact_email" id="contact_email" />
+
+                            <label for="contact_subject">Subject:</label>
+                            <input class="text" type="text" value="" name="contact_subject" id="contact_subject" />
+
+                            <label for="contact_message">Message:</label>
+                            <textarea name="contact_message" id="contact_message"></textarea>
+
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

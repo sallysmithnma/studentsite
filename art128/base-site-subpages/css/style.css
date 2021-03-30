@@ -105,6 +105,19 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.hide-visually {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+@media (min-width: 768px) {
+    .hide-on-largescreens {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+}
 
 /* IMAGES */
 img {
@@ -332,7 +345,8 @@ section {
     text-align: center;
 }
 
-.hero h1, p {
+.hero h1, 
+.hero p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -394,3 +408,92 @@ section {
     }
 
 }
+
+/* ARTICLES */
+/* Articles */
+article {
+    max-width: 38em;
+    margin: 0 auto 8em auto;
+    padding: 2em 0;
+  }
+  
+  article h1 {
+    text-align: center;
+  }
+  
+  article h1 + h2 {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    font-weight: normal;
+    margin-bottom: 1em;
+  }
+  
+  article .date {
+    text-align: center;
+    font-size: 0.625em;
+    line-height: 0.625em;
+    color: #999;
+    font-weight: normal;
+  }
+  
+  article .date + p {
+    margin-top: 2em;
+  }
+  
+  article p + h2,
+  article p + h3,
+  article p + h4,
+  article p + h5,
+  article p + h6 {
+    margin-top: 1em;
+  }
+
+  /* FORMS */
+form {
+    margin: 1.75em 0;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  form input,
+  form textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.15em;
+    display: block;
+    margin-bottom: 1.25em;
+    width: 100%;
+    color: #666;
+    padding: .25em;
+    border: 1px solid #ccc;
+  }
+  
+  form textarea {
+    border: 1px solid #ccc;
+    min-height: 6em;
+  }
+  
+  form input[type=button],
+  form input[type=submit],
+  form input[type=reset] {
+    width: auto;
+    background-color: rgba(0,0,255,1);;
+    border: 1px solid rgba(0,0,255,1);;
+    color: #fff;
+    padding: .75em 1em;
+    -webkit-border-radius: .32em;
+    -moz-border-radius: .32em;
+    border-radius: .32em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  
+  form input[type=button]:hover,
+  form input[type=submit]:hover,
+  form input[type=reset]:hover {
+    background-color: rgba(0,0,153,1);
+    border-color: rgba(0,0,153,1);
+  }
