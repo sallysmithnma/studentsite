@@ -1,0 +1,146 @@
+
+/* STYLE.CSS */
+body {
+  font-family: proxima-nova, sans-serif;
+  font-size: 87.5%; 
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #222;
+}
+
+h3 {
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 1.5em; 
+  font-weight: 300;
+  line-height: 1.2em;
+  /* border: 1px solid pink; */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red;  */
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 0;
+  position: relative;
+  border-left: 1px solid rgb(187, 186, 186);
+}
+
+.row.vertical.align {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-direction: row; 
+}
+
+#custom h3 {
+  text-align: center;
+}
+
+/* SLICK CENTER - CODEPEN */
+
+.carousel {
+  border: 1px solid orange;
+  padding: 10px;
+}
+
+.slide {
+  border: 1px solid red;
+  transform: scale(0.5);
+  transition: all 0.5s;
+  opacity: .9;
+}
+
+img {
+  border: 1px solid blue;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.single .text {
+  border: 1px solid green;
+  opacity: 0;
+}
+
+.slick-center {
+  -webkit-transform: scale(1);
+  transition: all 0.5s;
+  -moz-transform: scale(1);
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.slick-center .text {
+  border: 1px solid violet;
+  opacity: 1;
+  padding: 0;
+}
+
+.slick.track {
+   display: flex;
+   align-items: center;
+}
+
+/* TABLE */
+
+.text {
+  border: pink;
+  width: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.table {
+  border: 2px solid green;
+  width: 100%;
+  justify-content: center;
+}
+
+.table-row {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.category {
+  border: 1px solid yellow;
+  flex-basis: 10%;
+  display: flex;
+  max-width: 6em;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 1.25em;
+  letter-spacing: 2.75px;
+  list-style: none;
+  color: #222;
+}
+
+.descriptor {
+  border: 1px solid orange;
+  flex-basis: 60%;
+  display: flex;
+  font-family: ltc-caslon-pro, serif;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: none;
+  line-height: 1.25;
+  font-size: 1.2em;
+  max-width: 13em;
+  list-style: none;
+}
+
+.next-btn, 
+.prev-btn {
+  cursor: pointer;
+  text-align: center;
+}

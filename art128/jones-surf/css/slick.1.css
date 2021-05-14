@@ -1,0 +1,107 @@
+#custom h3 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* SLICK CENTER - CODEPEN */
+
+.carousel {
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  /* display: flex; */
+  transform: scale(0.5);
+  transition: all 0.5s;
+  opacity: .9;
+  padding: 0;
+  margin: 0;
+}
+
+.slide1 {
+  transform: scale(.9);
+  z-index: 0;
+}
+
+.slide1 img {
+  /* border: 1px solid purple; */
+  width: 100%;
+  height: auto;
+}
+
+.slick-center .slide1 {
+  -webkit-transform: scale(1);
+  transition: all 0.5s;
+  -moz-transform: scale(1);
+  transform: scale(1);
+  /* position: relative; */
+  z-index: 1;
+  opacity: 1;
+}
+
+.single .text {
+  opacity: 0;
+}
+
+.carousel img {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.slick-center {
+  -webkit-transform: scale(1);
+  transition: all 0.5s;
+  -moz-transform: scale(1);
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.slick-center .text {
+  transition: all 0.2s;
+  opacity: 1;
+  padding: 0;
+}
+
+.slick.track {
+   display: flex;
+   align-items: center;
+}
+
+/* TABLE */
+
+.text {
+  width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.table {
+  width: 100%;
+  justify-content: center;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.slider-container {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+
+.next-btn, 
+.prev-btn {
+  display: block;
+  cursor: pointer;
+  /* text-align: center; */
+}

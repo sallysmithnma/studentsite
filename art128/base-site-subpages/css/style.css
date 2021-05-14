@@ -240,8 +240,14 @@ body.demo::before {
     .row {
         display: flex;
         justify-content: space-between;
-        margin-left: -2%;
-        margin-right: -2%;
+        /* margin-left: -2%;
+        margin-right: -2%; */
+    }
+    .row > .column:first-child {
+        margin-left: 0;
+    }
+    .row > .column:last-child {
+        margin-right: 0;
     }
 
     .row > .column {
@@ -497,3 +503,15 @@ form {
     background-color: rgba(0,0,153,1);
     border-color: rgba(0,0,153,1);
   }
+
+/* FOR DEV PURPOSES ONLY */
+/* body, *, *:after, *:before {
+    background: none !important;
+    background-color: rgba(0,0,0,.05) !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    color: rgba(0,0,0,0) !important;
+}
+
+img, svg, canvas, video {
+    filter: contrast(0%);
+} */
