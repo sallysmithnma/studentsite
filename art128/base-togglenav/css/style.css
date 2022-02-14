@@ -348,7 +348,9 @@ section {
         text-align: right;
     }
     .toggle-nav .site-nav .menu-button {
-        display: block;
+        font-size: inherit;
+        background-color: transparent;
+        border: none;
         display: inline-block;
         cursor: pointer;
         padding: .3em .8em;

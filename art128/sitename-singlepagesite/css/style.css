@@ -111,6 +111,7 @@ p {
     left: -9999px;
   }
 
+
 @media (min-width: 768px) {
     .hide-on-largescreens {
         position: absolute;
@@ -338,6 +339,19 @@ body.demo::before {
     display: none;
 }
 
+/* STICKY HEADER */
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    }
+
+.site-header.sticky + .site-main {
+    padding-top: 3em;
+}
+
 /* SECTIONS */
 section {
     padding: 3em 0;
@@ -517,3 +531,19 @@ form {
 img, svg, canvas, video {
     filter: contrast(0%);
 } */
+
+
+/* CUSTOM SITE CSS */
+.section-title {
+    text-align: center;   
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section-title:after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgba(0,0,153,1);
+    width: 50px;
+    margin: 0.5em auto;
+}

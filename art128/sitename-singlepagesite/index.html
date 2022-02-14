@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Base | About</title>
+    <title>Site Name | Single-page Site</title>
     <meta name="description"
         content="This is a starter HTML + CSS + JS boilerplate set of code for website projects." />
 
@@ -18,20 +18,20 @@
 
 </head>
 
-<body>
+<body id="top">
 
 
-    <header class="site-header toggle-nav" data-navstate="closed">
+    <header class="site-header toggle-nav sticky" data-navstate="closed">
         <div class="container">
             <div class="site-id">
-                <h1><a href="index.html">Base Site</a></h1>
+                <h1><a href="index.html">Site Name</a></h1>
             </div>
             <nav class="site-nav">
                 <button class="menu-button navicon">Menu</button>
                 <ul>
-                    <li class="hide-on-largescreens"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="hide-on-largescreens"><a class="scroll" href="#top">Home</a></li>
+                    <li><a class="scroll" href="#about">About</a></li>
+                    <li><a class="scroll" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,17 +39,61 @@
 
     <main class="site-main">
 
-        <div class="container">
-            <section class="hero">
-                <h1>About Us</h1>
+        <section class="hero">
+            <div class="container">
+                <h2>This is the Hero Section</h2>
                 <p>
-                    This is a sub page example with a hero at top and stacked sections&nbsp;below.
+                    This is the hero section of a single-page&nbsp;web&nbsp;site.
                 </p>
-            </section>
-        </div>
+                <p>
+                    <a class="button scroll" href="#about">Learn More About Us</a>
+                    <a class="button alt scroll" href="#contact">Get in Touch</a>
+                </p>
+            </div>
+        </section>
 
         <section>
             <div class="container">
+                <div class="row">
+                    <div class="one-third column">
+                        <img src="img/placeholder-1x1.gif" alt="placeholder" />
+                        <h3>Heading 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            semper, nunc quis euismod porta, ligula dolor interdum dui,
+                            quis.
+                        </p>
+                        <p><a class="button" href="#">Button</a></p>
+                    </div>
+                    <div class="one-third column">
+                        <img src="img/placeholder-1x1.gif" alt="placeholder" />
+                        <h3>Heading 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            semper, nunc quis euismod porta, ligula dolor interdum dui,
+                            quis.
+                        </p>
+                        <p><a class="button" href="#">Button</a></p>
+                    </div>
+                    <div class="one-third column">
+                        <img src="img/placeholder-1x1.gif" alt="placeholder" />
+                        <h3>Heading 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            semper, nunc quis euismod porta, ligula dolor interdum dui,
+                            quis.
+                        </p>
+                        <p><a class="button" href="#">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTAINER -->
+        </section>
+
+        <section id="about">
+            <div class="container">
+
+                <h3 class="section-title">About Us</h3>
 
                 <article>
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
@@ -206,21 +250,51 @@
                 </article>
 
         </section>
+
+        <section id="contact">
+            <div class="container">
+
+                <h3 class="section-title">Contact Us</h3>
+
+                <div class="row">
+                    <div class="two-thirds column centered">
+                        <form>
+                            <label for="contact_name">Name:</label>
+                            <input class="text" type="text" value="" name="contact_name" id="contact_name" />
+
+                            <label for="contact_email">Email Address:</label>
+                            <input class="text" type="text" value="" name="contact_email" id="contact_email" />
+
+                            <label for="contact_subject">Subject:</label>
+                            <input class="text" type="text" value="" name="contact_subject" id="contact_subject" />
+
+                            <label for="contact_message">Message:</label>
+                            <textarea name="contact_message" id="contact_message"></textarea>
+
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+
+        </section>
+
     </main>
 
     <footer class="site-footer">
         <div class="container">
             <nav class="site-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="scroll" href="#top">Home</a></li>
+                    <li><a class="scroll" href="#about">About</a></li>
+                    <li><a class="scroll" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
 
 
+    <!-- SCROLL JS FILE -->
+    <script src="js/scroll.js"></script>
 
 
     <!-- MAIN JS FILE -->
