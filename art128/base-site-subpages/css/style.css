@@ -16,7 +16,6 @@
         #CONTAINER
         #MEDIAQUERIES
         #GRID SYSTEM
-            #CLEARFIX
     #BASE SITE
         #SITE STRUCTURE
             #HEADER
@@ -96,6 +95,9 @@ p {
 /* HELPER CLASSES */
 .text-centered {
     text-align: center;
+}
+.text-right {
+    text-align: right;
 }
 .full-width {
     max-width: none;
@@ -351,8 +353,7 @@ section {
     text-align: center;
 }
 
-.hero h1, 
-.hero p {
+.hero h1, .hero p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -517,3 +518,11 @@ form {
 img, svg, canvas, video {
     filter: contrast(0%);
 } */
+
+/* CARDS */
+
+.card {
+    background: #ccc;
+    padding: 1em 2em;
+    border-radius: 1em;
+}
