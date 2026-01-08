@@ -16,8 +16,8 @@ body {
 
 /* HEADER */
 header {
-    background-color: rgba(153,0,0,1);
-    color: rgba(255,255,255, .8);
+    background-color: rgb(255, 255, 255);
+    color: rgba(0,0,0, .8);
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,12 +25,12 @@ header {
 }
 
 header a {
-    color: rgba(255,255,255, .8);
+    color: rgba(153, 0, 0, 0.8);
     text-decoration: none;
 }
 
 header a:hover {
-    color: rgba(255,255,255, 1);
+    color: rgba(153, 0, 0, 1);
 }
 
 /* SITE ID */
@@ -111,7 +111,7 @@ aside {
     background-color: rgba(153,0,0,1);
     color: rgba(255,255,255, .8);
     text-align: center;
-    padding: 6em 1em;
+    padding: 6em 1em 4em 1em;
 }
 
 .hero h2 {
@@ -123,30 +123,40 @@ aside {
 
 .hero p {
     max-width: 30em;
-    margin: 1em auto;
+    margin-inline: auto;
 }
 
 /* COURSE SECTION */
 .courses {
     padding: 6em 1em;
-    display: grid;
-    justify-content: center;
 }
 
-.courses ul {
+.courses .courses-list {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
 }
 
 .courses h3 {
     text-align: center;
 }
 
+.courses img {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 0 2em 0 rgba(0,0,0,.2);
+    margin-bottom: .5em;
+}
+
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
-    background-color: rgba(0,0,0,.1);
-    color: rgba(0,0,0,.8);
+    background-color: rgba(153,0,0,1);
+    color: rgba(255,255,255, .8);
 }
 
 .page-home .hero{
@@ -156,24 +166,34 @@ aside {
     padding: 30vh 1em 20vh 1em;
 }
 
-.page-home header {
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
+
+/* PROJECTS SECTION */
+.projects {
+    padding: 6em 1em;
+    display: grid;
+    justify-content: center;
 }
 
+.projects h3 {
+    text-align: center;
+}
 
-
-/* COURSE WORK SECTION */
-.coursework {
-    padding: 6em 1em;
+.projects-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 3em;
 }
 
-.projects {
-    margin: 2em;
+.project img {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1em;
+    box-shadow: 0 0 2em 0 rgba(0,0,0,.2);
 }
 
 /* CODE BLOCKS */
