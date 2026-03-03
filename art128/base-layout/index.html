@@ -2,104 +2,240 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Base | Layout</title>
-    <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects." />
+  <meta charset="utf-8">
+  <title>Base | Layout</title>
+  <meta name="description" content="SiteBase2: a minimalistic HTML + CSS + JS base front-end framework for simple web site projects.">
 
-    <!-- FOR MOBILE / SMALL SCREENS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- VIEWPORT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FOR IE -->
-
-    <!-- MAIN CSS FILE -->
-    <link rel="stylesheet" href="css/style.css">
-
+  <!-- MAIN CSS FILE -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="demo">
+<body>
 
+  <section class="grid-demo">
     <div class="container">
+      <h1>Base Layout</h1>
 
-        <h1>Base Layout</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
+        fringilla ipsum, sed bibendum augue. Nullam euismod nec mauris
+        elementum porta. Sed varius nisl eu lobortis fringilla. Morbi id elit
+        sollicitudin, venenatis lacus id, cursus quam. Aliquam mollis orci vel
+        enim fermentum adipiscing. Duis facilisis lorem a nulla porttitor
+        sagittis.
+      </p>
 
-        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro temporibus asperiores aut, laudantium iusto voluptatum molestias voluptatibus. Iusto culpa aliquid vero obcaecati repudiandae, soluta, neque rerum tenetur debitis mollitia a, necessitatibus hic vitae laborum sunt aliquam suscipit dignissimos quisquam doloremque fuga consequatur distinctio facere. Corrupti consectetur fugiat labore aut distinctio nostrum vero porro ullam dignissimos ipsam sed consequuntur, quisquam laudantium architecto voluptatum similique impedit hic eius facilis blanditiis iure temporibus! Voluptate ratione adipisci debitis voluptates error quisquam fugit libero officiis tenetur, necessitatibus maxime ab fuga quas delectus et soluta perferendis dolores laborum qui possimus earum magni quaerat quia? Hic, non quam omnis nobis tenetur enim eius eligendi excepturi in consequuntur, veniam vero architecto repellat explicabo accusantium ducimus mollitia. Voluptates iste nihil nam exercitationem dolores. Quod mollitia reprehenderit deleniti dolor. Praesentium dolores labore autem fugit possimus eligendi beatae, inventore omnis nam, quisquam mollitia incidunt. Obcaecati praesentium perspiciatis nemo. Sit itaque impedit similique. Iure fugit tenetur facilis inventore enim labore architecto ab distinctio ducimus? Earum velit et eligendi. Cum odit veniam deserunt fugiat, assumenda id quibusdam magnam ut eaque commodi sint reprehenderit suscipit non ad voluptatum ex consectetur. Quia, beatae architecto eaque necessitatibus, aliquid ipsa maiores sit sunt veniam harum, quod a?</div>
+      <h2>Semantic Grid System</h2>
 
-        <h2>Grid</h2>
-
-        <div class="row">
-            <div class="column one-whole">One Whole Column</div>
+      <div class="row">
+        <div class="one-whole column">
+          <p>One Whole Column</p>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="column one-half">
-                One Half Column
-            </div>
-            <div class="column one-half">
-                One Half Column
-            </div>
+      <div class="row">
+        <div class="one-half column">
+          <p>One-half Column</p>
         </div>
+        <div class="one-half column">
+          <p>One-half Column</p>
+        </div>
+      </div>
 
-        <div class="row">
-            <div class="column one-third">
-                One Third Column
-            </div>
-            <div class="column one-third">
-                One Third Column
-            </div>
-            <div class="column one-third">
-                One Third Column
-            </div>
+      <div class="row">
+        <div class="one-third column">
+          <p>One-third Column</p>
         </div>
+        <div class="one-third column">
+          <p>One-third Column</p>
+        </div>
+        <div class="one-third column">
+          <p>One-third Column</p>
+        </div>
+      </div>
 
-        <div class="row">
-            <div class="column two-thirds">
-                Two Thirds Column
-            </div>
-            <div class="column one-third">
-                One Third Column
-            </div>
+      <div class="row">
+        <div class="one-third column">
+          <p>One-third Column</p>
         </div>
+        <div class="two-thirds column">
+          <p>Two-thirds Column</p>
+        </div>
+      </div>
 
-        <div class="row">
-            <div class="column one-fourth">
-                One Fourth Column
-            </div>
-            <div class="column one-fourth">
-                One Fourth Column
-            </div>
-            <div class="column one-fourth">
-                One Fourth Column
-            </div>
-            <div class="column one-fourth">
-                One Fourth Column
-            </div>
+      <div class="row">
+        <div class="one-fourth column">
+          <p>One-fourth Column</p>
         </div>
+        <div class="one-fourth column">
+          <p>One-fourth Column</p>
+        </div>
+        <div class="one-fourth column">
+          <p>One-fourth Column</p>
+        </div>
+        <div class="one-fourth column">
+          <p>One-fourth Column</p>
+        </div>
+      </div>
 
-        <div class="row">
-            <div class="column one-third centered">
-                One Third Column Centered
-            </div>
+      <div class="row">
+        <div class="one-third column centered">
+          <p>One-third Column Centered</p>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="column one-half centered">
-                One Half Column Centered
-            </div>
+      <div class="row">
+        <div class="one-half column centered">
+          <p>One-half Column Centered</p>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="column two-thirds centered">
-                Two Thirds Column Centered
-            </div>
+      <div class="row">
+        <div class="two-thirds column centered">
+          <p>Two-thirds Column Centered</p>
         </div>
+      </div>
 
     </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Grid Examples With Content</h2>
+
+      <div class="row">
+          <div class="one-half column">
+              <img src="img/placeholder-1x1.jpg" alt="Placeholder">
+          </div>
+          <div class="one-half column">
+              <h3>Text on the Right</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum excepturi maiores tenetur repellendus vero quia commodi, totam tempore nobis quae explicabo adipisci fuga accusantium pariatur laborum. Possimus nam odio error dolorum. Perferendis unde dolores culpa eligendi nesciunt doloremque sit earum ut beatae. Natus expedita accusantium adipisci assumenda quo quam soluta quod, praesentium quae eligendi dolores rerum totam alias saepe veritatis ducimus corrupti dolorum eius, doloribus mollitia! Debitis sed quod harum labore id cum aliquam tenetur! Adipisci tenetur ullam dicta ea tempora laudantium, modi, asperiores porro quis rem similique nobis ex, a provident. Et eligendi molestiae quod, nam quidem illum?</p>
+          </div>
+      </div>
+
+      <div class="row swapped">
+          <div class="one-half column">
+              <img src="img/placeholder-1x1.jpg" alt="Placeholder">
+          </div>
+          <div class="one-half column">
+              <h3>Text on the Left</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum excepturi maiores tenetur repellendus vero quia commodi, totam tempore nobis quae explicabo adipisci fuga accusantium pariatur laborum. Possimus nam odio error dolorum. Perferendis unde dolores culpa eligendi nesciunt doloremque sit earum ut beatae. Natus expedita accusantium adipisci assumenda quo quam soluta quod, praesentium quae eligendi dolores rerum totam alias saepe veritatis ducimus corrupti dolorum eius, doloribus mollitia! Debitis sed quod harum labore id cum aliquam tenetur! Adipisci tenetur ullam dicta ea tempora laudantium, modi, asperiores porro quis rem similique nobis ex, a provident. Et eligendi molestiae quod, nam quidem illum?</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="one-half column centered">
+              <img src="img/placeholder-1x1.jpg" alt="Placeholder">
+              <h3>Centered Column</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum excepturi maiores tenetur repellendus vero quia commodi, totam tempore nobis quae explicabo adipisci fuga accusantium pariatur laborum. Possimus nam odio error dolorum. Perferendis unde dolores culpa eligendi nesciunt doloremque sit earum ut beatae. Natus expedita accusantium adipisci assumenda quo quam soluta quod, praesentium quae eligendi dolores rerum totam alias saepe veritatis ducimus corrupti dolorum eius, doloribus mollitia! Debitis sed quod harum labore id cum aliquam tenetur! Adipisci tenetur ullam dicta ea tempora laudantium, modi, asperiores porro quis rem similique nobis ex, a provident. Et eligendi molestiae quod, nam quidem illum?</p>
+
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="grid-demo">
+    <div class="container">
+
+      <h2>BONUS 12-Column Grid System (Optional)</h2>
+
+      <div class="row">
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">col-3</div>
+        <div class="col-9">col-9</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">col-4</div>
+        <div class="col-4">col-4</div>
+        <div class="col-4">col-4</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">col-4</div>
+        <div class="col-8">col-8</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-6">col-6</div>
+        <div class="col-6">col-6</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-7">col-7</div>
+        <div class="col-5">col-5</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-8">col-8</div>
+        <div class="col-4">col-4</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-9">col-9</div>
+        <div class="col-3">col-3</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-10">col-10</div>
+        <div class="col-2">col-2</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-11">col-11</div>
+        <div class="col-1">1</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4 centered">col-4 Centered</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-6 centered">col-6 Centered</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-8 centered">col-8 Centered</div>
+      </div>
 
 
-
-
-    <!-- MAIN JS FILE -->
-    <script src="js/script.js"></script>
+    </div>
+  </section>
 
 </body>
 

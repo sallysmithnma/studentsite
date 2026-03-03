@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* #BASE CSS (Initital Setup)
 ---------------------------------
     #GLOBAL SETTINGS
@@ -373,4 +374,276 @@ body {
   background-color: #ddd;
   padding: 1em;
   text-align: center;
+}
+
+/* ----------------------------- */
+/* ----- SITE STRUCTURE -------- */
+/* ----------------------------- */
+/* Site Header */
+.site-header {
+  background: transparent;
+  padding: 0.5em 1em;
+}
+@media (width >= 768px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 0.75em;
+  }
+}
+.site-header a {
+  color: var(--color-text-body);
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: var(--color-links-hover);
+}
+.site-header a.button {
+  color: white;
+}
+
+/* Site Logo */
+.site-logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.site-logo a img,
+.site-logo a svg {
+  display: block;
+}
+.site-logo h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  color: var(--color-text-body);
+  padding: 0.5em 0 0.4em 0;
+}
+.site-logo h1 a {
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Site Footer */
+.site-footer {
+  background: transparent;
+  padding-block: 2em;
+}
+.site-footer a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: #000033;
+}
+.site-footer .container {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+@media (min-width: 768px) {
+  .site-footer .container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5em;
+  }
+}
+
+/* Main Site Section (Main Content Area) */
+/* Main Sections */
+section {
+  padding: 3em 0;
+}
+
+/* Hero Sections */
+.hero {
+  background: #dddddd;
+  padding: 4em 1em;
+}
+.hero h1,
+.hero h2 {
+  font-size: 4em;
+  line-height: 1.1em;
+  letter-spacing: -0.02em;
+}
+.hero h1,
+.hero h2,
+.hero p {
+  text-wrap: balance;
+}
+.hero.full-width {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* #SITE NAVIGATION  */
+/* Default Site-Navigation Menu (both header & footer) */
+.site-navigation .menu-button {
+  /* HIDE THE MENU BUTTON BY DEFAULT */
+  display: none;
+}
+.site-navigation ul {
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: center;
+}
+.site-navigation ul li {
+  margin: 0;
+  padding: 0;
+  /* MAKE LIST ITEMS INLINE BLOCKS */
+  display: inline-block;
+  line-height: 1;
+}
+.site-navigation ul li li {
+  white-space: nowrap;
+}
+.site-navigation ul li a {
+  display: block;
+  padding: 0.5em 0.75em 0.4em 0.75em;
+}
+.site-navigation ul li ul {
+  border-top: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .site-navigation ul {
+    border-top: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .site-navigation ul li {
+    /* show nested lists on hover */
+    /* SELECTED STATE */
+  }
+  .site-navigation ul li a {
+    margin: 0 0.5em;
+    padding: 0.85em 0.5em 0.75em 0.5em;
+  }
+  .site-navigation ul li a.button {
+    /* ADD SUPPORT FOR SITE HEADR NAV BUTTONS */
+    padding: 0.75em 1em;
+  }
+  .site-navigation ul li li {
+    /* stack nested lists */
+    display: block;
+  }
+  .site-navigation ul li ul {
+    display: block;
+    text-align: left;
+    /* hide nested lists by default by absolute positioning them off screen */
+    position: absolute;
+    z-index: 100;
+    left: -9000px;
+    background-color: white;
+  }
+  .site-navigation ul li ul a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .site-navigation ul li:hover ul {
+    left: auto;
+    right: 0;
+  }
+  .site-navigation ul li.selected a, .site-navigation ul li.current-menu-item a {
+    font-weight: bold;
+  }
+  .site-navigation ul li.selected li a, .site-navigation ul li.current-menu-item li a {
+    font-weight: normal;
+  }
+}
+
+/* STYLING FOR SMALL SCREEN NAV ITEMS */
+@media (max-width: 767px) {
+  .site-navigation ul li,
+.site-navigation ul li ul li {
+    display: block;
+  }
+
+  /* MAKE NAV LINKS BIGGER FOR TOUCHSCREENS */
+  .site-navigation ul li a {
+    padding-block: 0.75em;
+  }
+
+  .site-navigation ul li a:hover {
+    color: white;
+    background-color: #000033;
+  }
+}
+/* Default Site-Navigation (footer only) */
+.site-footer .site-navigation ul {
+  border-top: none;
+  margin: 0;
+}
+
+/* TOGGLE NAV */
+@media (max-width: 767px) {
+  .toggle-nav {
+    text-align: right;
+  }
+  .toggle-nav .site-logo {
+    position: absolute;
+  }
+  .toggle-nav .site-navigation ul li a {
+    padding: 0.75em;
+  }
+  .toggle-nav li a:hover {
+    color: #fff;
+    background: #003366;
+  }
+  .toggle-nav .menu-button {
+    /* Display the Menu Button if inside of a parent with a toggle-nav class */
+    display: inline-block;
+    margin: 0.6em 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .toggle-nav .menu-button::selection {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .toggle-nav .menu-button.navicon {
+    color: rgba(255, 255, 255, 0);
+  }
+  .toggle-nav .menu-button.navicon::after {
+    color: #333;
+    content: "☰";
+    font-size: 2em;
+    margin-top: -0.1em;
+    margin-bottom: 0.1em;
+    margin-left: 0;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    display: inline-block;
+  }
+  .toggle-nav[data-navstate=open] .menu-button.navicon::after {
+    content: "✕";
+    font-size: 1.6em;
+    margin-top: 0.2em;
+    margin-right: 0.1em;
+  }
+  .toggle-nav ul {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .toggle-nav[data-navstate=open] ul {
+    max-height: none;
+    padding: 1em 0;
+  }
+  .toggle-nav[data-navstate=open] ul ul {
+    padding: 0;
+  }
+}
+
+/* Animated Toggle-Nav Menu */
+@media (max-width: 767px) {
+  .toggle-nav.animated ul {
+    transition: all 0.4s ease-out;
+  }
 }
